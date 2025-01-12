@@ -1,6 +1,4 @@
 "use client";
-/* eslint-disable @typescript-eslint/no-explicit-any */
-
 import React, { useState } from "react";
 
 export default function HomePage() {
