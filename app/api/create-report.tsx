@@ -12,7 +12,7 @@ export const config = {
 
 const handler = async (req: NextApiRequest, res: NextApiResponse) => {
   const form = new formidable.IncomingForm();
-  form.parse(req, async (err, fields, files) => {
+  form.parse(req, async (err, fields, files: any) => {
     if (err) {
       return res.status(500).json({ error: "File upload failed" });
     }
